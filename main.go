@@ -62,7 +62,7 @@ func main() {
 		author := quotes[i].Author
 		c.Send(text)
 		c.Send(author)
-		return nil
+		return c.Send("Great people")
 	})
 	fmt.Println("Bot is running")
 	b.Start()
